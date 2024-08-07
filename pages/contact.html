@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../src/Fuller Equities-1.png" type="image/x-icon">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header id="home">
+        <div id="navbar" class="topnav">
+            <img src="../src/Fuller Equities.png" alt="logo" class="logo">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="./investor-login.html">Investor Login</a>
+            <a href="./tenant-login.html">Tenant Login</a>
+            <a href="../index.html">Home</a>
+        </div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../src/vid-3.mp4" type="video/mp4">
+        </video>
+
+    </header>
+    <main>
+        <div class="main" id="form">
+            <h1 data-san="slideLeft" style="text-shadow: 3px 3px 5px #000000;">CONTACT</h1>
+            <div data-san="slideRight" style="text-align: center;">
+                <form action="mailto:info@fullereq.com" method="post">
+                    <input type="text" id="fname" name="name" placeholder="Name*" required autocomplete="off"><br>
+                    <input type="email" id="email" name="email" placeholder="Email*" required autocomplete="off"><br>
+                    <textarea name="text" id="textArea" cols="100" rows="12" placeholder="Content"
+                        required></textarea><br>
+                    <button type="submit" value="send">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="../index.js"></script>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/Fuller Equities-1.png" type="image/x-icon">
+    <title>Fuller Equities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home">
+        <div id="navbar" class="topnav">
+            <img src="src/Fuller Equities.png" alt="logo" class="logo">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="./pages/investor-login.html">Investor Login</a>
+            <a href="./pages/tenant-login.html">Tenant Login</a>
+            <a href="./pages/contact.html">Contact</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#home">Home</a>
+        </div>
+
+
+        <h1 class="title" data-san="slideTop">Revolutionizing <span style="color: #f7941e; font-weight: 900;">Real
+                Estate</span>,<br>
+            Together.</h1>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="src/vid-3.mp4" type="video/mp4">
+        </video>
+
+    </header>
+
+
+    <main>
+
+        <hr>
+        <div class="main" id="about">
+            <h1 data-san="slideLeft">ABOUT</h1>
+            <p data-san="slideRight">Schweb Partners is a fully integrated Real Estate Acquisition and Management Firm
+                founded by Abraham and
+                Jacques. The two partners got their start in early 2005 buying single-family homes locally in their
+                community. In the wake of the Great Financial Crisis in 2009, they turned their attention to
+                multi-family, using their experience and knowledge earned from years of managing smaller properties to
+                expanding to a multi-state portfolio of Apartment Communities. With the solid financial backing of a
+                select group of close family offices, the past ten years have seen their portfolio grow to 5,000 plus
+                units. Schweb Partners has expanded from the two founders into a strong team with a reputation for
+                identifying opportunities, executing transactions quickly, and deploying an operations team that has
+                proven their ability to execute on the founders vision and successfully add value to the property. In
+                2022 the firm began to expand into new asset classes such as Retail and Industrial.</p>
+        </div>
+        <hr>
+        <div class="main" id="portfolio">
+            <h1 data-san="slideLeft">PORTFOLIO</h1>
+        </div>
+        <div class="main" id="slideshow-container" data-san="slideRight">
+            <h2>FEATURED PROPERTIES</h2>
+            <div class="mySlides fade">
+                <img src="src/ab-marlow-gardens-llc-temple-hills-md-primary-photo.png" class="slide-img">
+                <div class="text">Marlow Apartments, Temple Hills, MD 428 units</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="src/Takoma Towers, Takoma Park, MD 470 units.png" class="slide-img">
+                <div class="text">Takoma Towers, Takoma Park, MD 470 units</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="src/Morris County, NJ 110,000 SF Shopping Center.jpeg" class="slide-img">
+                <div class="text">Morris County, NJ 110,000 SF Shopping Center</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="src/uptown-22-west-palm-beach-fl-primary-photo.png" class="slide-img">
+                <div class="text">Uptown 22, Weat Palm Beach, FL 258 units</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="src/Daycare Ground up Development. Burlington County, NJ.png" class="slide-img">
+                <div class="text">Daycare Ground up Development. Burlington County, NJ</div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="main" id="invCri">
+            <h1 data-san="slideRight">INVESTMENT CRITERIA</h1>
+            <p data-san="slideLeft">Property Types- Cash Flowing Anchored or shadow-anchored neighborhood and community
+                shopping centers, multi-tenant strip centers, and freestanding single-tenant properties offering
+                expansion, redevelopment and lease-up or re-tenanting potential. <br><br>
+
+                Single assets as well as multiple property portfolio acquisitions with no maximum deal size. <br><br>
+
+                Characteristics- Strong visibility, superior ingress/egress, functional site plans, high vehicle traffic
+                counts. <br><br>
+
+                Demographics- Minimum metro population of 100K, minimum average household income of $50K within a three
+                (3) mile radius, and projected population growth
+            </p>
+            <h2 data-san="slideRight">Focus Market</h2>
+            <img src="src/map.png" alt="Map" id="map" data-san="slideLeft">
+        </div>
+        <hr>
+        <div class="main" id="invOpp">
+            <h1 data-san="slideRight">INVESTMENT OPPORTUNITIES</h1>
+        </div>
+        <div class="formStyle" data-san="slideTop">
+            <p> <span style="font-weight: 700;">GET EXCLUSIVE ACCESS TO OUR DEALS</span><br>
+                Gain access to investment offerings by submitting this investor registration request form <br><br>
+                "*" indicates required fields
+            </p>
+            <form id="inv-form" method="post">
+                <input type="text" id="inv-name" name="inv-name" placeholder="First Name*" required
+                    autocomplete="off"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off"><br>
+                <input type="email" id="inv-email" name="inv-email" placeholder="Email*" required
+                    autocomplete="off"><br>
+                <input type="number" id="inv-num" name="inv-num" placeholder="Phone Number*" required
+                    autocomplete="off"><br>
+                <button name="submit" type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+<script src="index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAU2-pTlVTRiGOm8calW0olD6LYCK3gw90",
+        authDomain: "fullereq-b12c5.firebaseapp.com",
+        databaseURL: "https://fullereq-b12c5-default-rtdb.firebaseio.com",
+        projectId: "fullereq-b12c5",
+        storageBucket: "fullereq-b12c5.appspot.com",
+        messagingSenderId: "957774118393",
+        appId: "1:957774118393:web:a7357d5b80783cff465128",
+        measurementId: "G-GF7HHWN2FN"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.getElementById('inv-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        set(ref(db, 'investor-data/' + Math.floor(Math.random() * 10000000)), {
+            name: document.getElementById('inv-name').value,
+            email: document.getElementById('inv-email').value,
+            phone: document.getElementById('inv-num').value
+        });
+        alert('Thanks, We will contact you soon!');
+        document.getElementById('inv-form').reset();
+    });
+</script>
+
+</html>
